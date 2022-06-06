@@ -2,7 +2,6 @@
 
 .project-modal {
     padding: 30px;  
-    border: 1px solid blue;
     height: auto;
     border-radius: 0.25rem;
     background-color: #f7fafc;
@@ -23,33 +22,23 @@
         max-width: 800px;
     }
 
-
     &__title {
         font-size: 26px;
         margin-top: 0;
     }
     
-
     &__image {
         max-width: 100%;
         height: auto;
-    
-
 
         @include screenm {
             max-width: 30rem;
         }
-
-       
-        
-
-        
     }
 
     &__content {
         max-width: 40rem;
         text-align: left;
-        
     }
 
     &__text {
