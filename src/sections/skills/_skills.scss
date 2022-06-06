@@ -1,0 +1,50 @@
+@import './../../styling/import';
+
+.skills {
+    padding: 0 40px;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    &__sub-title {
+        text-align: center;
+        color: $color--text-primary;
+        margin: 1rem 0 0 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 0 80px 0;
+
+        @include screenxl {
+            flex-direction: row;
+        }
+    
+    }
+
+    &__text {
+        text-align: left;
+        font-size: 18px;
+         p {
+             margin: 20px 0;
+         }
+
+         strong {
+            color: $color--text-primary; 
+            font-family: $font--secondary;
+         }
+    }
+
+    &__bubbles {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 100px 0 0 0;
+    }
+}

@@ -1,0 +1,35 @@
+@import './../../styling/import';
+
+.skill  {
+    background-color: $color--primary;
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+
+    @include screenl {
+        width: 150px;
+        height: 150px;
+    }
+
+    svg {
+        width: 75px;
+        height: 75px;
+
+        @include screenxxl {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    
+}

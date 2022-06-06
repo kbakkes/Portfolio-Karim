@@ -1,0 +1,63 @@
+@import '../../styling/import';
+
+.project {
+    max-width: 600px;
+    border-radius: 0.25rem;
+    background-color: #f6f6f6;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__name { 
+        color: $color--black;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__tag-list {
+        display: flex;
+        gap: 15px;
+        margin: 20px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    &__tag {
+        background-color: $color--light-grey;
+        color: $color--dark-grey;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: 700;
+    }
+}
+
+.modal-overlay { 
+        position: fixed;
+        z-index: 6;
+        background-color: black;
+        opacity: 65%;
+        top: 0%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+     
+}   
+
+.project-modal {
+    &:hover {
+        cursor: default;
+    }
+    
+    &__image {
+        max-width: 100%;
+        height: auto;
+        max-width: 35rem;
+    }
+}

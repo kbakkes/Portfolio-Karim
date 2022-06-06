@@ -1,0 +1,11 @@
+@import './styling/responsiveness';
+
+.App {
+  text-align: center;
+  scroll-behavior: smooth;
+}
+  
+section  {
+  max-width: 1280px;
+  margin: 0 auto;
+}

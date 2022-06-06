@@ -1,0 +1,33 @@
+@import './../../styling/import';
+
+.projects {
+    margin-bottom: 50px;
+    padding: 0 40px;
+    scroll-behavior: smooth;
+
+
+
+    &__title {
+        text-align: center;
+        margin: 0.5rem 0;
+        color: $color--black;
+    }
+
+    &__sub-title {
+        color: $color--text-primary;
+        margin: 1rem 0 0 0;
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        margin: 40px 0;
+
+        @include screenl {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

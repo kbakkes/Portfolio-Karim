@@ -1,0 +1,93 @@
+// media queries
+$xxs: 320px; //screenxxs
+$xxs2: 375px; //screenxxs2
+$xs: 480px; // screenxs
+$s: 600px; //screens
+$m: 768px; // screenm
+$l: 900px; // screenl
+$xl: 1024px; // screenxl
+$xxl: 1220px; //screenxxl
+$xxxl: 1480px; //screenxxxl
+
+// not used rn
+$for4k: 3840px;
+
+// @include screenxxs {
+// }
+// @include screenxxs2 { 
+// }
+// @include screenxs {
+// }
+// @include screens {
+// }
+// @include screenm1 {
+// }
+// @include screenm {
+// }
+// @include screenl {
+// }
+// @include screenxl {
+// }
+// @include screenxxl {
+// }
+
+// Mixins
+@mixin screenxxs {
+	@media (min-width: #{$xxs}) {
+		@content;
+	}
+}
+
+@mixin screenxxs2 {
+	@media (min-width: #{$xxs2}) {
+		@content;
+	}
+}
+
+@mixin screenxs {
+	@media (min-width: #{$xs}) {
+		@content;
+	}
+}
+
+@mixin screens {
+	@media (min-width: #{$s}) {
+		@content;
+	}
+}
+
+@mixin screenm {
+	@media (min-width: #{$m}) {
+		@content;
+	}
+}
+
+@mixin screenl {
+	@media (min-width: #{$l}) {
+		@content;
+	}
+}
+
+@mixin screenxl {
+	@media (min-width: #{$xl}) {
+		@content;
+	}
+}
+
+@mixin screenxxl {
+	@media (min-width: #{$xxl}) {
+		@content;
+	}
+}
+
+@mixin screenxxxl {
+	@media (min-width: #{$xxxl}) {
+		@content;
+	}
+}
+
+@mixin for4k {
+	@media (min-width: #{$for4k}) {
+		@content;
+	}
+}

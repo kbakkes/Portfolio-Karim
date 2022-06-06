@@ -1,0 +1,63 @@
+@import 'import';
+
+.navigation {
+    background-color: $color--primary;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        justify-content: row;
+        list-style: none;
+        font-weight: 700;
+        color: white;
+    }
+
+    &__list-item {
+        padding: 0 1rem;
+        width: 100%;
+
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+
+            &:link{
+                color: white;
+            }
+            &:visited { 
+                color: white;
+            }
+
+            &:hover {
+             &:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+              
+             }   
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+                background-color: white;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+        }
+    
+    }
+
+    &__logo {
+        font-weight: 700;
+        padding: 0 1rem;
+        color: white;
+    }
+}

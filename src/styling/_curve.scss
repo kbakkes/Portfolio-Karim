@@ -1,0 +1,43 @@
+@import 'import';
+
+.curve { 
+    width: 100%;
+    background-color: $color--primary;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow-x: clip;
+
+    img { 
+        margin-bottom: -3px; 
+    }
+
+    .wave {
+        background: url('../images/curve.svg') repeat-x;
+        position: absolute;
+        bottom: 0;
+        width: 6400px;
+        height: 198px;
+        left: 0;
+        animation: wave 25s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        transform: translate3d(0, 0, 0);
+    }
+   
+    @keyframes wave {
+        0% {
+          transform: translate(0,0);
+        }
+        100% {
+          transform: translate(-1600px);
+        }
+    }
+      
+    @keyframes swell {
+        0%, 100% {
+          transform: translate3d(0,-25px,0);
+        }
+        50% {
+          transform: translate3d(0,5px,0);
+        }
+    }
+}

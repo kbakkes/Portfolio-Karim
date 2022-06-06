@@ -1,0 +1,21 @@
+@import '../styling/import';
+
+.home {
+    height: 50vh;
+    background-color: $color--primary;
+    padding: 2rem;
+
+    &__title {
+        color: white;
+        font-family: Open Sans,sans-serif;
+        font-size: 62px;
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+
+    &__sub-title {
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}
